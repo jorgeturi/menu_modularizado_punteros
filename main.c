@@ -1,9 +1,15 @@
 #include <stdio.h>
-//#include <stdin.h>
+#include <stdint.h>
+#include <malloc.h>
 void borrar_pantalla(void);
 void tecla_para_continuar(void);
+
+
 int main()
 {
+    char *cadena_a_cargar;
+    cadena_a_cargar=NULL;
+    
     char opcion_elegida=1; //variable para las opciones del menu
     char confirmacion;       //variable para almacenar la confirmacion de salida
 
@@ -22,6 +28,8 @@ int main()
 {
 
     case '1':
+        borrar_pantalla();                
+        printf("ingrese la frase que quiere agregar\n");
         tecla_para_continuar();         //se espera una tecla para continuar
         borrar_pantalla();                //se borra la pantalla
         break;                          
