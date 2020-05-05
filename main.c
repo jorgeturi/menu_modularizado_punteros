@@ -9,14 +9,13 @@ int main()
 
     while (opcion_elegida!=0)             //mientras la opcion elegida sea distinto de 5 imprime el menu, arranca en 0 por eso al menos 1 vez se muestra
 {
-    printf("Menu de operaciones\n");      //menu
-    printf("1.Suma\n");
-    printf("2.Resta\n");
-    printf("3.Multiplicacion\n");
-    printf("4.Division\n");
-    printf("0.Salir\n");
+    printf("\t Arme su menu\n");      //menu
+    printf("1~ Agregar opcion\n");
+    printf("2~ Quitar opcion\n");
+    printf("3~ Ir al menu\n");
+    printf("0~ Salir\n");
 
-    printf("\nelija su opcion \n");        //se elije una opcion y se guarda en opcion_elegida
+    printf("\nElija su opcion: \n\t\t");        //se elije una opcion y se guarda en opcion_elegida
     scanf("%c",&opcion_elegida);
 
     switch (opcion_elegida)                //segun se haya tocado, pasan los casos
